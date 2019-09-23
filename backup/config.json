@@ -1,0 +1,13 @@
+{
+	"website":"https://whollyticket.com/paymentpage/payment.php?event_id=",
+	"uid" : "21587",
+	"first_name": "Sophie",
+	"last_name": "Crane",
+	"email": "sccrane@email.sc.edu",
+	"name_on_card": "Whatever name is on your card",
+	"card_number": "1111222233334444",
+	"cvv": "000",
+	"expiry_month": "00",
+	"expiry_year": "00"
+}
+
