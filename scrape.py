@@ -12,7 +12,7 @@ def check_page(url, driver) -> bool:
         else:
             return False
     except:
-        print('An non-fatal error occurred.  Continuing')
+        print('Correct HTML tag not found on page. The page is probably not the right one')
         return False
 
 def update_id_in_config(new_property, property_name: str):
@@ -43,6 +43,7 @@ with open('data.json') as data:
             uid += 1
         else:
             print(f'Success, found %d as valid UID for game %s' % (uid, configData['desired_game_name']))
+            update_id_in_config(uid, 'uid') 
         
         if uid >= original_uid + ((int)(configData['max_loops'])):
             break
