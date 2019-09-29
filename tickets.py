@@ -19,10 +19,9 @@ class Data:
 configData = {}
 with open('config.json') as json_file:
     configData = json.load(json_file)
-
-# webbrowser.open('https://whollyticket.com/paymentpage/payment.php?event_id=21587')
-
-    # Opens the website to the correct place
+    
+    # set variable to abstract out the url a bit for easier updating with the scrape script
+    website = configData['website'] + ((str)configData['id'])
     driver.get(configData['website'])
 
     # select correct first input

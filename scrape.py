@@ -15,6 +15,17 @@ def check_page(url, driver) -> bool:
         print('An non-fatal error occurred.  Continuing')
         return False
 
+def update_id_in_config(new_property, property_name: str):
+    # Read in config file
+    with open('config.json', 'r') as data:
+        original = json.load(data)
+    
+    # Update specified field here
+    original[property_name] = new_property
+    # close file, then open again with write permissions
+    with open('config.json', 'w') as data:
+        json.dump(original, data)
+    print('fin')
 
 with open('data.json') as data:
     configData = json.load(data)

@@ -50,6 +50,7 @@ Here are a few helpful terminal commands and what they do.
 - Homebrew (I also refer to this as `brew`, this was also installed when I visited)
 - Python 3 and pip (same as above, these will need to be updated by running `brew upgrade python3` and `pip install --upgrade pip` to update pip (which is like brew but for Python packages only))
 - selenium (this is installed through pip, running `pip install selenium` and updating by running `pip install --upgrade selenium`)
+- ChromeDriver: You can install this by running `brew cask install chromedriver`.  You need this to let the automation work since I was lazy and didn't acutally automate anything myself, I made a testing tool do it for me instead.  
 
 ---
 That should be it.  In most cases, if you get an error message, screenshot it and send it to me.  
