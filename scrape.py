@@ -21,7 +21,7 @@ def update_id_in_config(new_property, property_name: str):
         original = json.load(data)
     
     # Update specified field here
-    original[property_name] = new_property
+    original[property_name] = str(new_property)
     # close file, then open again with write permissions
     with open('config.json', 'w') as data:
         json.dump(original, data)
