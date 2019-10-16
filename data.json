@@ -2,7 +2,7 @@
 	"previous_uid":"21587",
 	"const_slug": "Fraternity Lot",
 	"current_year": "2019",
-	"desired_game_name": "Florida",
+	"desired_game_name": "Vanderbilt",
 	"website_base" :"https://whollyticket.com/paymentpage/payment.php?event_id=",
-	"max_loops" : "100"	
+	"max_loops" : "10000"	
 }

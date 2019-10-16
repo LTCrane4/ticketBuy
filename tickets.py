@@ -7,7 +7,6 @@ from selenium.webdriver.support.ui import Select
 # Selenium setup
 driver = webdriver.Chrome()
 
-def decrypt(value):
 
 # Class to hold config data from json config file
 class Data:
@@ -21,7 +20,7 @@ with open('config.json') as json_file:
     configData = json.load(json_file)
     
     # set variable to abstract out the url a bit for easier updating with the scrape script
-    website = configData['website'] + ((str)configData['id'])
+    website = configData['website'] + ((str)(configData['uid']))
     driver.get(configData['website'])
 
     # select correct first input
