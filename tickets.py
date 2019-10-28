@@ -9,9 +9,6 @@ driver = webdriver.Chrome()
 
 
 # Class to hold config data from json config file
-class Data:
-    def __init__(self, data):
-        self.__dict__ = json.loads(data)
 
 
 # Load in data from config.json.  config.json MUST be in the same directory as this python script in order for it to work
@@ -20,8 +17,8 @@ with open('config.json') as json_file:
     configData = json.load(json_file)
     
     # set variable to abstract out the url a bit for easier updating with the scrape script
-    website = configData['website'] + ((str)(configData['uid']))
-    driver.get(configData['website'])
+    website = configData['website'] + configData['uid']
+    driver.get(website)
 
     # select correct first input
     fname_input = driver.find_element_by_id('UMbillfname')
